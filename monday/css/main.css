@@ -96,6 +96,7 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
 body {
   width: 900px;
   margin: 0 auto;
@@ -109,6 +110,7 @@ header {
   width: 100%;
   background-color: #ccc;
 }
+
 
 .box_left {
   width: 260px;
@@ -202,15 +204,16 @@ nav ul {
 }
 
 nav li {
-  margin: 0px;
+  display: inline;
   padding: 10px;
   width: 62px;
   float: left;
-  height: 100%;
   background-color: #eee;
   border-right: 1px solid #ccc;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+}
+nav li:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 nav {
@@ -220,21 +223,19 @@ nav {
   float: left;
 }
 
-nav a {
+nav li a {
   display: box;
   padding: 0px;  
   color: #333;
   text-decoration: none;
 }
 
-nav li a.active {
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  padding: 20px;
-  margin-left: -10px;
-  background-color: #ccc;
 
+nav li:hover {
+  background-color: blue;
 }
+
+
 
 footer {
   margin: 300px auto;
